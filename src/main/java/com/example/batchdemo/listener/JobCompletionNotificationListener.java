@@ -1,6 +1,6 @@
 package com.example.batchdemo.listener;
 
-import com.example.batchdemo.model.AddressDTO;
+import com.example.batchdemo.model.dto.AddressDTO;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.BatchStatus;

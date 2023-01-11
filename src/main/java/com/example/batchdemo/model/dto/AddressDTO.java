@@ -1,4 +1,4 @@
-package com.example.batchdemo.model;
+package com.example.batchdemo.model.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

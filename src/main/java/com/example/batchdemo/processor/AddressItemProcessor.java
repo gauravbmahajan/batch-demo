@@ -1,6 +1,6 @@
 package com.example.batchdemo.processor;
 
-import com.example.batchdemo.model.AddressDTO;
+import com.example.batchdemo.model.dto.AddressDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.item.ItemProcessor;
 
