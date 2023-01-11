@@ -8,6 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 import java.io.Serializable;
 import lombok.Data;
 
@@ -23,6 +24,7 @@ public class Location implements Serializable {
 
   @OneToOne(mappedBy = "location")
   @JsonIgnore
+  @Transient
   private Address address;
 
   @Column(name = "accessibility")
