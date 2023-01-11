@@ -1,0 +1,24 @@
+spring:
+  flyway:
+    enabled: true
+    location: db/migration
+  datasource:
+    url: jdbc:mysql://localhost:3306/batch_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: ALWAYS
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  batch:
+    jdbc:
+      initialize-schema: ALWAYS
+#spring.batch.jdbc.platform= all
+#logging.level.root = DEBUG
+
